@@ -9,28 +9,39 @@
 </head>
 <body>
     <div class="container">
-        <img class="profile-photo" src="https://media.licdn.com/dms/image/D4D03AQGy3Cx1xoR8QQ/profile-displayphoto-shrink_800_800/0/1675610899608?e=2147483647&v=beta&t=_YhT35vAO_VWjtoE1bQ9p0MgPB8YgL9HO_Fm2jydhBU" alt="Photo of Eugenio"  alt="">
-        <h1>Eugenio Uglov</h1>
-        <p><strong><em>Web developer</em></strong></p>
-        <div class="info-about-me">
-            <p>I prefer to create a high quality products.</p>
-            <p>Programming are my work and hobbie.</p>
+        <div class="about-me-container">
+            <img class="profile-photo" class="inline" src="https://media.licdn.com/dms/image/D4D03AQGy3Cx1xoR8QQ/profile-displayphoto-shrink_800_800/0/1675610899608?e=2147483647&v=beta&t=_YhT35vAO_VWjtoE1bQ9p0MgPB8YgL9HO_Fm2jydhBU" alt="Photo of Eugenio">
+            
+            <div class="info-about-me-container inline">
+                <h1>Eugenio Uglov</h1>
+                <p><strong><em>Web developer</em></strong></p>
+                <div class="description-about-me">
+                    <p>I prefer to create a high quality products.</p>
+                    <p>Programming is my work and hobbie.</p>
+                </div>
+                <br>
+                <div class="link-container"><a href="https://www.linkedin.com/in/eugenio-uglov-022873214/" target="_blank">LinkedIn</a></div>
+                <div class="link-container"><a href="https://github.com/EugenioUglov" target="_blank">GitHub</a></div>
+                <div class="link-container"><a href="https://www.facebook.com/eugeniouglov" target="_blank">Facebook</a></div>
+            </div>
         </div>
-        <br>
-        <p><a href="https://www.instagram.com/eugenio_uglov/">Instagram</a></p>
-        <p><a href="https://www.facebook.com/eugeniouglov">Facebook</a></p>
-        <p><a href="https://www.youtube.com/channel/UCi6BItxWmQeOMttMpFwf7Gw">Youtube</a></p>
+
         <div class="card">
-            <h2>My hobbies</h2>
-            <ol>
-                <li>Travel</li>
-                <li>Snowboarding</li>
-                <li>Swimming</li>
-            </ol>
+            <h2>Skills</h2>
+            <ul>
+                <li>C#</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Unity 3D</li>
+            </ul>
         </div>
+
         <div class="card">
             <h2>Experience</h2>
             <table>
+                
                 <thead>
                     <tr>
                         <th>Name</th>
@@ -42,35 +53,39 @@
                     <tr>
                         <td>Freelancer</td>
                         <td>Game develoer</td>
-                        <td>2018-2021</td>
+                        <td>2018 - 2021</td>
                     </tr>
                     <tr>
                         <td>E-mentor</td>
                         <td>Web developer</td>
-                        <td>2019-current</td>
+                        <td>2019 - current</td>
                     </tr>
                 </tbody>
             </table>
         </div>
-        <h2>Contact with me</h2>
+        
+        <div class="card form">
+            <h2>Contact with me</h2>
+            <form action="mailto:eugeniouglov@gmail.com" method="post" enctype="text/plain">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Your name: </label>
+                        <input type="text" id="name-input" placeholder="Input your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your email: </label>
+                        <input type="email" id="email"  placeholder="Input your email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your message: </label><br/>
+                    <textarea id="message" placeholder="Input your message..." cols="20" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn-send-message">Send</button>
+            </form>
+        </div>
 
-        <form action="/">
-            <div>
-                <label for="name">Your name: </label>
-                <input type="text" id="name" placeholder="Input your name">
-            </div>
-            <div>
-                <label for="email">Your email: </label>
-                <input type="email" id="email" placeholder="Input your email">
-            </div>
-            <div>
-                <label for="message">Your message: </label><br/>
-                <textarea id="message" placeholder="Input your message" cols="20" rows="5"></textarea>
-            </div>
-            <div>
-                <button type="submit">Send</button>
-            </div>
-        </form>
+        
     </div>
 
 </body>
